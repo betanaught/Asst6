@@ -23,7 +23,7 @@ sleep.data[1:10,]
 #                           "PredIndex", "SEIndex", "TotalSleep")
 sleep.data$BodyMass <- log(sleep.data$BodyMass)
 sleep.data$BrainMass <- log(sleep.data$BrainMass)
-colnames(sleep.data)[2:3] <- c("logBodyMass", "logBrainMass")
+colnames(sleep.data)[3:4] <- c("logBodyMass", "logBrainMass")
 
 # make the casement plot
 sleep.splot <- GGally::ggpairs(sleep.data[, c("logBodyMass", "logBrainMass",
